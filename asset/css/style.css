@@ -405,9 +405,6 @@ dt{
     
     .contact-title{
         width:100%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 5%;
         text-align: center;
         display: flex;
         flex-direction: row;
