@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width:100%;
+    height: 80px;
+    font-family: 'Amatic SC', cursive;
+    position: fixed;
+}
+
+.header-left{
+    width:33%
+
+}
+
+.header-center{
+    width: 34%;
+}
+
+.header-center > h1{
+    text-align: center;
+    font-size: 40px;
+
+    
+}
+
+.header-right{
+    width:33%;
+    margin-top: 25px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    align-items: flex-end;
+    color: white;
+}
+
+.photo-gallery{
+    width: 100%;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Amatic SC', cursive;
+    
+    
+
+}
+.content-box{
+    justify-content: space-around;
+    width:33%;
+    padding-top:10%;
+    text-align: center;
+   
+
+}
+
+
+.scroll-container > img{
+    height: 200px;
+    width: 300px;
+    /* display: block; */
+}
+
+.image-title{
+    padding-top: 15px;
+    padding-bottom: 15px
+    
+}
+
+.gallery-image {
+    width: 200px; /* 画像の幅を調整 */
+    margin: 10px; /* 画像の間隔を調整 */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1); /* ホバー時に画像を拡大 */
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ライトボックスをクリックしたときのスタイル */
+.lightbox:hover {
+    cursor: pointer;
+}
+
+
+
+
+.video-gallery{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color:white;
+}
+
+.video-box{
+    text-align: center;
+}
+
+.video-container > video{
+    height: 300px;
+    width:300px;
+}
+.h-long-video > video{
+    height: 300px;
+    width: 300px;
+}
+
+
+@media screen and (max-width:780px) {
+    .header{
+        height:60px;
+        position: static;
+    }
+    
+    .header-center > h1{
+        font-size: 15px;
+    }
+    .header-right{
+        padding-right: 2%;
+    }
+    .nav > li > a {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+        align-items: flex-end;
+    }
+    
+    
+    
+    .scroll-container > img{
+        height: 50px;
+        width: 75px;
+        /* display: block; */
+    }
+
+    .h-long-picture > img{
+        height: 75px;
+        width: 50px;
+    }
+    
+    .image-title{
+        font-size: 4%;
+    }
+
+    .video-gallery{
+        width: 100%;
+    }
+
+    .video-container > video{
+        height: 50px;
+        width: 75px;
+    }
+
+    .h-long-video > video{
+        height: 75px;
+        width: 50px;
+    }
+    .video-title{
+        font-size:4%;
+    }
+}
+
+

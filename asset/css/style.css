@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width:100%;
+    height: 80px;
+    font-family: 'Amatic SC', cursive;
+    position: fixed;
+}
+
+.header-left{
+    width:33%
+
+}
+
+.header-center{
+    width: 34%;
+}
+
+.header-center > h1{
+    text-align: center;
+    font-size: 40px;
+
+    
+}
+
+.header-right{
+    width:33%;
+    margin-top: 25px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    align-items: flex-end;
+    color: white;
+}
+
+
+.picture-slide{
+    background-color: rgb(49, 49, 47);
+    background-size: cover; 
+    background-image: no-repeat;
+    background-position: center ;
+}
+
+.center-area{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(49, 49, 47);
+    /* padding: 5% 10%; */
+
+}
+
+.title-sec{
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 10%;
+
+    
+}
+
+.title > span{
+    writing-mode: vertical-lr;
+    text-orientation:sideways;
+    font-size: 30px;
+    margin-left: 0;
+    padding: 15px;
+    color: blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+
+.text-box{
+    width: 50%;
+    color:blanchedalmond;
+}
+
+.text-box > h2{
+    text-align: left;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    color:blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+}
+
+.text-box > p{
+    padding: 10px 0;
+    padding-left: 15%;
+}
+
+.ja-description{
+    font-size: 20px;
+
+}
+
+.en-description{
+    margin-top: 20px;
+    color:blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.image-box{
+    width:40%;
+    padding-right: 15%;
+    
+}
+.image-box > img{
+    height:400px;
+    width:600px;
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:780px) {
+
+    .header{
+        height:60px;
+        position: static;
+    }
+    
+    .header-center > h1{
+        font-size: 15px;
+    }
+
+    .header-right{
+        padding-right: 2%;
+    }
+    .nav > li > a {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+        align-items: flex-end;
+    }
+
+    .center-area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-sec{
+        padding-top: 4%;
+        padding-left: 0%;
+    }
+
+
+    .title {
+        display: flex;
+        flex-direction: row;
+    }
+    .title > span{
+        writing-mode: horizontal-tb;
+
+        
+    }
+    .contents{
+        flex-direction: column-reverse;
+    }
+    .text-box{
+        width: 100%;
+    }
+    
+    .text-box > h2{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 20px;
+        padding-left: 10%;
+    }
+    
+    .text-box > p{
+        padding-left: 10%;
+        padding-top:2%;
+        padding-bottom: 2%;
+    }
+    .ja-description{
+        font-size: 14px;
+    
+    }
+    
+    .en-description{
+        margin-top: 2%;
+        color:blanchedalmond;
+        font-family: 'Amatic SC', cursive;
+        font-size: 18px;
+    }
+
+
+    .image-box > img{
+        width:100vw;
+        height: 40vh;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+}
+    
+
+
+.news-area{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(143, 145, 143);
+    display: flex;
+}
+
+.news-sec{
+    padding-left: 10%;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.news-title > span{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 30px;
+    margin-left: 0;
+    padding: 15px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+.news-article{
+    width: 100%;
+    
+}
+
+.news-item{
+    padding-top:5%;
+    padding-left: 25%;
+    
+    
+
+}
+
+.news-item > p{
+    width:50%;
+    font-size: 20px;
+    background:linear-gradient(transparent 70%, black 0%);
+    text-align: center;
+    color: white;
+}
+
+p > span{
+    float: left;
+    font-size: 20px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+
+.contact-area{
+    height: 600px;
+    background-color: black;
+    display: flex;
+    color:white;
+    
+}
+
+.contact-title{
+    padding-left: 10%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contact-title > span{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 30px;
+    margin-left: 0;
+    padding: 15px;
+    color: blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 15%;
+}
+
+.contact-form{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+    color: blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+    font-size:25px;
+}
+
+
+
+dd{
+    margin-top: 15px;
+    padding-right: 10%;
+}
+dt{
+    margin-top: 15px;
+    padding-right: 10%;
+}
+
+.text{
+    padding-left:6%; 
+} 
+
+.btn_send{
+    font-family: 'Amatic SC', cursive;
+    color: blanchedalmond;
+    font-size:25px;
+    border: none;
+    background: transparent;
+    width: 3em;
+    height: 3em;
+}
+.ex{
+    font-size: 10px;
+    text-align: center;
+    padding-left:6%; 
+    padding-right: 10%;
+}
+
+@media screen and (max-width:780px){
+    
+    .news-area{
+        height: auto;
+        flex-direction: column;
+        
+    }
+
+    .news-sec{
+        padding-top:5%;
+        padding-bottom: 5%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .news-title{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+
+    .news-title > span {
+        writing-mode: horizontal-tb; 
+        position: relative;
+
+    }
+
+
+    .news-article{
+        width: 100%;
+
+        
+    }
+    
+    .news-item{
+        padding-top:8%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+        
+    }
+    
+    .news-item > p{
+        width:100%;
+        font-size: 15px;
+        background:linear-gradient(transparent 70%, black 0%);
+        text-align: center;
+        color: white;
+
+    }
+    
+    p > span{
+        float: left;
+        font-size: 15px;
+        color: white;
+        font-family: 'Amatic SC', cursive;
+        
+    }
+
+    .contact-area{
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .contact-title{
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .contact-title > span{
+        writing-mode:horizontal-tb;
+    }
+    .contact-form{
+        width: 100%;
+        font-size:20px;
+
+    }
+    dd{
+        margin-top: 15px;
+        padding-right: 0;
+    }
+    dt{
+        margin-top: 15px;
+        padding-right: 0;
+    }
+
+    input{
+        width: 25em;
+        max-width: 100%;
+
+    }
+
+    
+    .text{
+        padding-left:0%; 
+    } 
+    .btn_send{
+        font-family: 'Amatic SC', cursive;
+        color: blanchedalmond;
+        font-size:25px;
+        border: none;
+        background: transparent;
+        width: 3em;
+        height: 3em;
+    }
+    .ex{
+        font-size: 10px;
+        text-align: center;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
