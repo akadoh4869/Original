@@ -139,6 +139,7 @@
         width: 100%;
         height:60px;
         position: static;
+        /* position: fixed; */
     }
     
     .header-center > h1{
@@ -281,9 +282,11 @@ p > span{
 
 .contact-sec{
     padding-left: 10%;
-    padding-top: 50px;
+    padding-top: 8%;
     text-align: center;
 }
+
+
 
 .contact-title > span{
     writing-mode: vertical-rl;
@@ -354,18 +357,23 @@ dt{
     }
 
 
+    .news-title-box{
+        padding-left: 25%;
+        
+    }
     .news-title{
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding-left: 30%;
-        padding-right: 30%;
+        /* padding-left: 30%;
+        padding-right: 30%; */
     }
 
 
     .news-title > span {
         writing-mode: horizontal-tb; 
         position: relative;
+        padding-left: 25px;
 
     }
 
@@ -406,19 +414,29 @@ dt{
         height: auto;
         flex-direction: column;
     }
+
+    .contact-sec{
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .contact-title-box{
+        padding-left: 20%;
+        
+    }
     
     .contact-title{
         width:100%;
         text-align: center;
         display: flex;
         flex-direction: row;
-        padding-left: 20%;
+        /* padding-left: 20%; */
     }
     
     .contact-title > span{
         writing-mode:horizontal-tb;
         padding: 15px;
-        padding-left: 0;
+        padding-left: 10px;
     }
     .contact-form{
         width: 100%;
@@ -439,12 +457,6 @@ dt{
         box-sizing: border-box;
     }
 
-    input{
-        width: 25em;
-        max-width: 100%;
-    }
-
-    
     .text{
         padding-left:0%; 
     } 
