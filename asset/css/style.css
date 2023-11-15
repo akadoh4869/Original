@@ -136,6 +136,7 @@
 @media screen and (max-width:780px) {
 
     .header{
+        width: 100%;
         height:60px;
         position: static;
     }
@@ -155,6 +156,7 @@
     }
 
     .center-area{
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -208,7 +210,7 @@
 
     .image-box > img{
         width:100vw;
-        height: 40vh;
+        height: 35vh;
         padding-top: 8%;
         padding-bottom: 8%;
     }
@@ -277,7 +279,7 @@ p > span{
     
 }
 
-.contact-title{
+.contact-sec{
     padding-left: 10%;
     padding-top: 50px;
     text-align: center;
@@ -338,6 +340,7 @@ dt{
 @media screen and (max-width:780px){
     
     .news-area{
+        width: 100%;
         height: auto;
         flex-direction: column;
         
@@ -399,6 +402,7 @@ dt{
     }
 
     .contact-area{
+        width: 100%;
         height: auto;
         flex-direction: column;
     }
@@ -408,11 +412,13 @@ dt{
         text-align: center;
         display: flex;
         flex-direction: row;
-
+        padding-left: 20%;
     }
     
     .contact-title > span{
         writing-mode:horizontal-tb;
+        padding: 15px;
+        padding-left: 0;
     }
     .contact-form{
         width: 100%;
@@ -421,23 +427,32 @@ dt{
     }
     dd{
         margin-top: 15px;
-        padding-right: 0;
+        padding-right: 0px;
     }
     dt{
         margin-top: 15px;
-        padding-right: 0;
+        padding-right: 0px;
+    }
+
+    input[type="text"]{
+        width:80vw;
+        box-sizing: border-box;
     }
 
     input{
         width: 25em;
         max-width: 100%;
-
     }
 
     
     .text{
         padding-left:0%; 
     } 
+
+    textarea{
+        width:80vw;
+        box-sizing: border-box;
+    }
     .btn_send{
         font-family: 'Amatic SC', cursive;
         color: blanchedalmond;
