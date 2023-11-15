@@ -281,12 +281,14 @@ p > span{
 }
 
 .contact-sec{
-    padding-left: 10%;
+    padding-left: 15%;
     padding-top: 8%;
     text-align: center;
 }
 
-
+.contact-title-box{
+    padding-top: 25px;
+}
 
 .contact-title > span{
     writing-mode: vertical-rl;
@@ -422,6 +424,7 @@ dt{
 
     .contact-title-box{
         padding-left: 20%;
+        
         
     }
     
